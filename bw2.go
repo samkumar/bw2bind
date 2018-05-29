@@ -25,7 +25,7 @@ type BW2Client struct {
 func (cl *BW2Client) transact(req *frame) chan *frame {
 	seqno := req.SeqNo
 	inchan := make(chan *frame, 3)
-	outchan := make(chan *frame, 3)
+	outchan := make(chan *frame, 16384)
 	cl.olock.Lock()
 	cl.seqnos[seqno] = inchan
 	req.WriteToStream(cl.out)

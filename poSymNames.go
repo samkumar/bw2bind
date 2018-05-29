@@ -74,6 +74,13 @@ const PODFMaskBWRoutingObject = `0.0.0.0/24`
 const PODFBWRoutingObject = `0.0.0.0`
 const POMaskBWRoutingObject = 24
 
+//POEncryptedSTARWAVE (0.0.1.0/24): STARWAVE
+//A message encrypted end-to-end with the STARWAVE protocols
+const PONumPOEncryptedSTARWAVE = 256
+const PODFMaskPOEncryptedSTARWAVE = `0.0.1.0/24`
+const PODFPOEncryptedSTARWAVE = `0.0.1.0`
+const POMaskPOEncryptedSTARWAVE = 24
+
 //LogDict (2.0.1.0/24): LogDict
 //This class is for log messages encoded in msgpack
 const PONumLogDict = 33554688
@@ -480,6 +487,20 @@ const PONumVenstarInfo = 33557505
 const PODFMaskVenstarInfo = `2.0.12.1/32`
 const PODFVenstarInfo = `2.0.12.1`
 const POMaskVenstarInfo = 32
+
+//VenstarControl (2.0.12.2/32): VenstarControl
+//Consult the documentation
+const PONumVenstarControl = 33557506
+const PODFMaskVenstarControl = `2.0.12.2/32`
+const PODFVenstarControl = `2.0.12.2`
+const POMaskVenstarControl = 32
+
+//TPLink (2.0.12.3/32): TPLink
+//Consult the documentation
+const PONumTPLink = 33557507
+const PODFMaskTPLink = `2.0.12.3/32`
+const PODFTPLink = `2.0.12.3`
+const POMaskTPLink = 32
 
 //String (64.0.1.0/32): String
 //A plain string with no rigid semantic meaning. This can be thought of as a
